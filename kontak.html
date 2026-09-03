@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontak | Portal Berita HAAK Keuskupan Malang</title>
+  <meta name="description" content="Informasi kontak dan formulir komunikasi Portal Berita HAAK Keuskupan Malang.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Kontak | Portal Berita HAAK Keuskupan Malang">
+  <meta property="og:description"
+    content="Informasi kontak dan formulir komunikasi Portal Berita HAAK Keuskupan Malang.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+  <header class="haak-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Portal Berita HAAK Keuskupan Malang">
+        <img class="brand-mark" src="img/icons/logo.png" alt="Logo HAAK Keuskupan Malang">
+
+        <span class="brand-text">
+          <strong>Portal Berita HAAK</strong>
+          <span>Keuskupan Malang · Informasi Publik</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a data-nav href="index.html">Beranda</a><a data-nav href="berita.html">Berita</a><a data-nav
+          href="kategori.html">Kategori</a><a data-nav href="kegiatan.html">Kegiatan</a><a data-nav
+          href="dialog.html">Dialog</a><a data-nav href="refleksi.html">Harmoni</a><a data-nav
+          href="dokumentasi.html">Dokumentasi</a><a data-nav href="tentang.html">Tentang HAAK</a><a data-nav
+          href="kontak.html">Kontak</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Aktifkan mode gelap"><i
+            class="fa-solid fa-moon"></i></button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-controls="mobileNav"
+          aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi seluler">
+      <div class="container">
+        <a href="index.html">Beranda</a><a href="berita.html">Berita</a><a href="kategori.html">Kategori</a><a
+          href="kegiatan.html">Kegiatan</a><a href="dialog.html">Dialog</a><a
+          href="refleksi.html">Harmoni</a><a href="dokumentasi.html">Dokumentasi</a><a
+          href="tentang.html">Tentang HAAK</a><a href="kontak.html">Kontak</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Beranda</a><span>/</span><span>Kontak</span></div><span
+          class="eyebrow">Hubungi</span>
+        <h1>Kontak</h1>
+        <p>Sampaikan pertanyaan, informasi, atau pesan kepada Komisi Hubungan Antar Agama dan Kepercayaan (HAAK)
+          Keuskupan Malang melalui informasi kontak yang tersedia.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <div class="info-list">
+              <div class="info-item"><i class="fa-solid fa-location-dot"></i>
+                <div><strong>Alamat</strong><span>Jl. Guntur No.2, Oro-oro Dowo, Kec. Klojen, Kota Malang, Jawa Timur
+                    65119, Indonesia</span></div>
+              </div>
+              <div class="info-item"><i class="fa-solid fa-envelope"></i>
+                <div><strong>Email</strong><span>komisihaakkeuskupanmalang@gmail.com</span></div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-circle-info"></i>
+                <div>
+                  <strong>Informasi Publik</strong>
+                  <span>
+                    Menyediakan informasi mengenai berita, kegiatan, dialog, dan dokumentasi HAAK Keuskupan Malang.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top:20px"><iframe class="map" title="Peta lokasi Keuskupan Malang" loading="lazy"
+                src="https://www.google.com/maps?q=Keuskupan%20Malang&output=embed"></iframe></div>
+          </div>
+          <form class="form-card" id="contactForm" novalidate> <!-- Label kecil untuk identitas form --> <span
+              class="eyebrow">Hubungi HAAK</span> <!-- Judul form -->
+            <h2 style="margin:10px 0 20px">Kirim Pesan</h2>
+            <div class="form-grid"> <!-- ========================= FIELD NAMA ========================== -->
+              <div class="field"> <label for="nama">Nama</label> <input id="nama" name="nama" class="input" type="text"
+                  required minlength="3" maxlength="100" autocomplete="name" placeholder="Masukkan nama Anda"> <small
+                  id="namaError" data-error></small> </div>
+              <!-- ========================= FIELD EMAIL ========================== -->
+              <div class="field"> <label for="email">Email</label> <input id="email" name="email" type="email"
+                  class="input" required maxlength="150" autocomplete="email" placeholder="username@gmail.com"> <small
+                  id="emailError" data-error></small> </div>
+              <!-- ========================= FIELD SUBJEK ========================== -->
+              <div class="field full"> <label for="subjek">Subjek</label> <input id="subjek" name="subjek" class="input"
+                  type="text" maxlength="150" autocomplete="off" placeholder="Subjek pesan"> <small id="subjekError"
+                  data-error></small> </div> <!-- ========================= FIELD PESAN ========================== -->
+              <div class="field full"> <label for="pesan">Pesan</label> <textarea id="pesan" name="pesan" class="input"
+                  required minlength="10" maxlength="5000" rows="7" placeholder="Tuliskan pesan Anda..."></textarea>
+                <small id="pesanError" data-error></small>
+              </div>
+              <!-- ========================= TOMBOL SUBMIT ========================== -->
+              <div class="field full"> <button class="btn gold" id="contactSubmit" type="submit"> <i
+                    class="fa-solid fa-paper-plane"></i> Kirim Pesan </button> </div>
+            </div> <!-- Catatan sistem -->
+            <p style=" font-size:.7rem; color:var(--haak-muted); margin-bottom:0; line-height:1.6; "> Pesan akan dibuka
+              melalui aplikasi email Anda dan diarahkan ke alamat resmi Komisi HAAK Keuskupan Malang. </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="haak-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand"><img class="brand-mark" src="img/icons/logo.png" alt="Logo HAAK Keuskupan Malang">
+            <span class="brand-text">
+              <strong style="color:#fff">Portal Berita HAAK</strong>
+              <span style="color:#aaa">Keuskupan Malang</span>
+            </span>
+          </div>
+          <p>Portal informasi publik mengenai berita, kegiatan, dialog, refleksi, dan dokumentasi Komisi Hubungan Antar
+            Agama dan Kepercayaan (HAAK) Keuskupan Malang.</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/komisihaakkeuskupanmalang" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram HAAK Keuskupan Malang">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/komisi.haak.keuskupan.malang/" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook HAAK Keuskupan Malang">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@KomisiHAKKeuskupanMalang" target="_blank" rel="noopener noreferrer" aria-label="YouTube HAAK Keuskupan Malang">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@haak.keuskupan.malang" target="_blank" rel="noopener noreferrer" aria-label="TikTok HAAK Keuskupan Malang">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3>Navigasi</h3><a href="index.html">Beranda</a><a href="berita.html">Berita</a><a
+            href="kegiatan.html">Kegiatan</a><a href="dokumentasi.html">Dokumentasi</a><a href="tentang.html">Tentang
+            HAAK</a>
+        </div>
+        <div>
+          <h3>Kanal</h3><a href="dialog.html">Dialog</a><a href="refleksi.html">Harmoni</a><a
+            href="kategori.html">Kategori</a><a href="kontak.html">Kontak</a>
+        </div>
+        <div>
+          <h3>Informasi Publik</h3>
+          <p><i class="fa-solid fa-location-dot"></i> Keuskupan Malang, Jawa Timur</p>
+          <p><i class="fa-solid fa-envelope"></i> komisihaakkeuskupanmalang@gmail.com</p>
+          <p>Informasi yang disajikan merupakan bagian dari upaya menghadirkan kabar, kegiatan, dan refleksi seputar
+            dialog lintas agama dan kepercayaan serta semangat persaudaraan dan kerukunan.</p>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Portal Berita HAAK Keuskupan Malang.</span><span>Merawat Persaudaraan ·
+          Membangun Dialog · Menguatkan Kerukunan</span></div>
+    </div>
+  </footer>
+  <div class="toast" id="haakToast" role="status" aria-live="polite"></div>
+  <button class="back-top" id="backTop" type="button" aria-label="Kembali ke atas"><i
+      class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
