@@ -1,0 +1,33 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#333333"><title>Offline | Portal HAAK</title><link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/v21-enhancement.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></head><body><main class="section"><div class="container"><div class="empty-state"><i class="fa-solid fa-wifi"></i><h1>Anda sedang offline</h1><p>Portal HAAK tidak dapat memuat halaman baru saat ini. Artikel yang sudah disimpan offline tetap dapat dibuka dari perangkat Anda.</p><a class="btn gold" href="index.html">Kembali ke Beranda</a></div></div></main><button class="back-top" id="backTop" type="button" aria-label="Kembali ke atas" title="Kembali ke atas"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+<script>
+(() => {
+  const btn = document.getElementById("backTop");
+  if (!btn) return;
+  const icon = btn.querySelector("i");
+  let lastY = Math.max(0, window.scrollY || 0);
+  let direction = "up";
+  const sync = () => {
+    const y = Math.max(0, window.scrollY || 0);
+    const delta = y - lastY;
+    if (Math.abs(delta) >= 4) {
+      direction = delta > 0 ? "down" : "up";
+      lastY = y;
+      btn.dataset.direction = direction;
+      icon.classList.toggle("fa-arrow-up", direction === "up");
+      icon.classList.toggle("fa-arrow-down", direction === "down");
+      const label = direction === "up" ? "Kembali ke atas" : "Ke bagian bawah";
+      btn.setAttribute("aria-label", label);
+      btn.setAttribute("title", label);
+    }
+    btn.classList.toggle("visible", y > 120);
+  };
+  sync();
+  window.addEventListener("scroll", sync, { passive: true });
+  btn.addEventListener("click", () => {
+    const target = direction === "down" ? Math.max(0, document.documentElement.scrollHeight - window.innerHeight) : 0;
+    window.scrollTo({ top: target, behavior: "smooth" });
+  });
+})();
+</script>
+</body></html>
